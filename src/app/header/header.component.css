@@ -1,0 +1,21 @@
+a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.5em;
+    color: red;
+    
+}
+
+
+a:hover {
+    background-color: rgb(183, 215, 209);
+    
+}
+
+#navbarScroll{
+    background-color: black;
+}
+
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: red;
+}
+ */

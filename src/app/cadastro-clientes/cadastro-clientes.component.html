@@ -1,0 +1,48 @@
+<div class="container">
+
+    <div class="row box-cadastro">
+        <div class="col-12">
+
+            <h3 class="text-center">
+                Faça seu cadastro e transforme seu projeto
+                verão em projeto de vida.
+            </h3>
+
+            <form class="mt-5 " [formGroup]="formCadastro" (ngSubmit)="cadastro()">
+
+                <div class="form-group">
+
+                    <input type="text" class="form-control cadastro"
+                     placeholder="Nome" formControlName="nome" [(ngModel)] = "nome">
+                </div>
+            
+            <div class="form-group">
+
+                <input type="text" class="form-control cadastro"
+                placeholder="CPF" maxlength="14"
+                formControlName="cpf" (keypress)="mascara_cpf(this)" [(ngModel)] = "cpf">
+            </div>
+
+            <div class="form-group">
+                <input type="email" class="form-control cadastro"
+                placeholder="E-mail" formControlName="email" [(ngModel)] = "email">
+            </div>
+
+            <div class="form-group">
+
+                <input type="text" class="form-control cadastro"
+                placeholder="Telefone" (keypress)="mascara_tel(this)"
+                maxlength="13" formControlName="telefone" [(ngModel)] = "telefone">
+            </div>
+
+            <div class="form-group">
+
+                <input type="text" class="form-control cadastro"
+                placeholder="Endereço" formControlName="endereco" [(ngModel)] = "endereco">
+            </div>
+
+            <button type="submit" class="btn btn-cadastro btn-lg"
+                [disabled]= "!formCadastro.valid">Cadastrar</button>           
+            </form>
+    </div>
+</div></div>
